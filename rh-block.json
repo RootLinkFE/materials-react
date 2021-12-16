@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "type": "component",
+      "belong": "react",
+      "belongLib": "ant-design",
+      "title": "导入弹窗",
+      "namespace": "",
+      "name": "导入弹窗",
+      "key": "FileImportModal",
+      "description": "导入弹窗",
+      "features": [],
+      "tags": ["导入", "antd"],
+      "img": "",
+      "private": "",
+      "dependencies": ["antd"],
+      "path": "src/FileImportModal",
+      "url": "https://github.com/RootLinkFE/materials-vue/blob/master/src/FileImportModal",
+      "previewUrl": "http://materials-react.leekhub.com/materials/file-import-modal"
+    }
+  ]
+}
