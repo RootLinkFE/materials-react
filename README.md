@@ -13,7 +13,7 @@
 ├── index.md
 ├── src # 区块源码
 │   ├── FileImportModal # 依赖 antd 的页面和区块
-│          └── material.json #
+│          └── material.json # 物料描述文件
 └── package.json
 ```
 

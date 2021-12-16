@@ -59,7 +59,7 @@ async function genBlockJson(screenShotType) {
             const newMaterialJson = JSON.stringify(json, null, '\t');
             fs.writeFileSync(materialJsonPath, newMaterialJson);
           } catch (e) {
-            console.log(e);
+            console.log('截图报错：', e);
           }
         }
       }
@@ -67,9 +67,6 @@ async function genBlockJson(screenShotType) {
       json.previewUrl = `${materialsDemoUrl}/materials/${_.kebabCase(
         json.key,
       )}`;
-      console.log('====================================');
-      console.log(json.previewUrl);
-      console.log('====================================');
     }
 
     blockList.push(json);

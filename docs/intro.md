@@ -20,23 +20,9 @@ nav:
 ```shell
 ├── docs #文档
 ├── index.md
-├── packages # 分包
-│   ├── ant-design # 依赖 antd 的页面和区块
-│   │   ├── package.json
-│   │   ├── src
-│   │   │   ├── pages # 页面目录
-│   │   │   ├── blocks # 区块目录
-│   │   │   │   └── AntdTestBlock
-│   │   │   └── index.js
-│   │   └── yarn.lock
-│   └── base # 只依赖 React 的页面和区块
-│       ├── package.json
-│       ├── src
-│       │   ├── blocks
-│       │   │   └── TestBlock
-│       │   ├── index.js
-│       │   └── pages
-│       └── yarn.lock
+├── src # 区块源码
+│   ├── FileImportModal # 依赖 antd 的页面和区块
+│          └── material.json # 物料描述文件
 └── package.json
 ```
 

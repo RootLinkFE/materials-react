@@ -8,10 +8,10 @@
   "key": "FileImportModal",
   "description": "导入弹窗",
   "features": [],
-  "tags": ["导入"],
-  "img": "",
+  "tags": ["导入", "antd"],
+  "img": "https://img.souche.com/f2e/tmp/e6no1ftoau14h5zwp5dcyefo2x6eac61.png",
   "private": "",
-  "dependencies": ["@ant-design/pro-form"],
+  "dependencies": ["@ant-design/pro-form", "antd"],
   "path": "src/FileImportModal",
-  "url": "https://github.com/RootLinkFE/materials-react/src/FileImportModal"
+  "url": "https://github.com/RootLinkFE/materials-vue/blob/master/src/FileImportModal"
 }
