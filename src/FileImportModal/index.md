@@ -1,13 +1,13 @@
 ---
-title: FileImportModal
+title: 文件导入
 nav:
   title: 物料
   path: /materials
 group:
-  title: '反馈'
+  title: '弹窗'
 ---
 
-## RhFileImportModal
+## FileImportModal
 
 统一封装 文件导入弹窗
 

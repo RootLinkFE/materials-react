@@ -9,8 +9,8 @@ const util = require('util');
 const { genBlockJson } = require('./rh-block');
 
 const exec = util.promisify(childProcess.exec);
-
-genBlockJson('increment').then(async (files) => {
+// ci 时无法及时拿到部署后的最新代码（缓存原因），说以这里不截图
+genBlockJson('no').then(async (files) => {
   try {
     await exec(`git add .`);
     await exec(`git commit -m "chore: update block json"`);

@@ -1,0 +1,17 @@
+{
+  "type": "component",
+  "belong": "react",
+  "belongLib": "ant-design",
+  "title": "导入弹窗",
+  "namespace": "",
+  "name": "导入弹窗",
+  "key": "FileImportModal",
+  "description": "导入弹窗",
+  "features": [],
+  "tags": ["导入"],
+  "img": "",
+  "private": "",
+  "dependencies": ["@ant-design/pro-form"],
+  "path": "src/FileImportModal",
+  "url": "https://github.com/RootLinkFE/materials-react/src/FileImportModal"
+}

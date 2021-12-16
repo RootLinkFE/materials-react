@@ -66,8 +66,9 @@ const main = (options) => {
     const dirPath = path.join(process.cwd(), `screenshot`);
     fs.ensureDir(dirPath);
     const imgPath = path.join(dirPath, `${route}.png`);
+    let url = `http://localhost:${port || 8000}/${route}`;
     screenshot.fromURL(
-      `http://localhost:${port || 8000}/${route}`,
+      url,
       imgPath,
       {
         clip,
@@ -82,14 +83,6 @@ const main = (options) => {
         upload(imgPath)
           .then((filePath) => {
             try {
-              /*     const jsonPath = path.join(process.cwd(), '../../materials.json');
-              let json = await fs.readJson(jsonPath);
-              const index = json.list[`${type}s`].findIndex((v) => {
-                return v.name === name;
-              });
-              json.list[`${type}s`][index]['screenshot'] = filePath;
-              let str = JSON.stringify(json, null, '\t');
-              await fs.writeFile(jsonPath, str); */
               console.log(chalk.green(`截图已上传：${filePath}`));
               resolve(filePath);
             } catch (err) {
@@ -109,6 +102,6 @@ const main = (options) => {
 
 module.exports = main;
 
-/* main({ route: 'candlestick-chart-block' }).then((filePath) =>
-  console.log(filePath)
+/* main({ route: 'materials/file-import-modal' }).then((filePath) =>
+  console.log(filePath),
 ); */
